@@ -1,5 +1,6 @@
 import Footer from "../Components/Footer";
 import Header from "../Components/Header";
+// import InProgress from "../Components/Inprogress";
 import UrlForm from "../Components/UrlForm";
 
 const Home = () => {
@@ -7,6 +8,7 @@ const Home = () => {
     <>
       <Header />
       <UrlForm />
+      {/* <InProgress /> */}
       <Footer />
     </>
   )

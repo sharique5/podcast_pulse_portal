@@ -1,0 +1,25 @@
+.summary-container {
+  height: 85vh;
+  width: 100vw;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+
+  .MuiPaper-root {
+    width: 80%;
+    height: 50%;
+    overflow-y: auto;
+    padding: 3%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+
+  span {
+    font-size: 24px;
+    text-align: left;
+    font-weight: bold;
+    width: 100%;
+  }
+}
