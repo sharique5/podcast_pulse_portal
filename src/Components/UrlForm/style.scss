@@ -1,0 +1,57 @@
+.url-form {
+  height: 85vh;
+  width: 100vw;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    display: flex;
+    width: 50%;
+  }
+
+  .form {
+    height: 80%;
+    width: 40%;
+    border: 2px dashed #EFBCAB;
+
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+
+    form {
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 5%;
+      width: 80%;
+
+      button {
+        margin-top: 5%;
+        text-align: center;
+        align-items: center;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .url-form {
+    flex-flow: column;
+
+    .form {
+      width: 80%;
+    }
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .form {
+    h1 {
+      font-size: 24px;
+    }
+  }
+}
