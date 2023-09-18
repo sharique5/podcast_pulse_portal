@@ -5,13 +5,15 @@ import InProgress from "../Components/Inprogress";
 import UrlForm from "../Components/UrlForm";
 import axios from 'axios';
 
+const URL = "http://20.219.9.99/summary";
+
 const Home = () => {
   const [inProgress, setInProgress] = React.useState(false);
   const [showToast, setShowToast] = React.useState(false);
   
   const handleSubmit = (url, email) => {
     setInProgress(true);
-    axios.post("URL", { url, email})
+    axios.post(URL, { url, email})
       .then(_ => {
         setShowToast(true);
       })
